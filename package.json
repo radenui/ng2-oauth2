@@ -1,8 +1,8 @@
 {
   "name": "ng2-oauth2",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Provide OAuth2 and OpenId Connect support for Angular2",
-  "main": "./bundles/ng2-oauth2.js",
+  "main": "./ng2-oauth2.js",
   "typings": "./ng2-oauth2.d.ts",
   "scripts": {
     "test": "tsc && karma start",
