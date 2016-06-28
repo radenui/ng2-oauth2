@@ -1,0 +1,58 @@
+{
+  "name": "ng2-oauth2",
+  "version": "0.0.1",
+  "description": "Provide OAuth2 and OpenId Connect support for Angular2",
+  "main": "ng2-oauth2.js",
+  "typings": "./ng2-oauth2.d.ts",
+  "scripts": {
+    "test": "tsc && karma start",
+    "test-watch": "tsc && karma start --no-single-run --auto-watch",
+    "commit": "npm run prepublish && npm test && git-cz",
+    "prepublish": "typings install && tsc && node make.js",
+    "semantic-release": "semantic-release pre && npm publish && semantic-release post"
+  },
+  "keywords": [
+    "angular2",
+    "oauth2"
+  ],
+  "author": "Arthur Andrieu",
+  "license": "MIT",
+  "peerDependencies": {
+    "@angular/common": "^2.0.0-rc.3",
+    "@angular/compiler": "^2.0.0-rc.3",
+    "@angular/core": "^2.0.0-rc.3",
+    "@angular/http": "^2.0.0-rc.3"
+  },
+  "devDependencies": {
+    "@angular/common": "^2.0.0-rc.3",
+    "@angular/compiler": "^2.0.0-rc.3",
+    "@angular/core": "^2.0.0-rc.3",
+    "@angular/http": "^2.0.0-rc.3",
+    "@angular/platform-browser": "^2.0.0-rc.3",
+    "commitizen": "~2.5.0",
+    "cz-conventional-changelog": "~1.1.4",
+    "es6-promise": "^3.0.2",
+    "es6-shim": "^0.35.0",
+    "gulp": "^3.9.1",
+    "gulp-git": "^1.7.1",
+    "jasmine-core": "~2.4.1",
+    "karma": "~0.13.15",
+    "karma-chrome-launcher": "~0.2.2",
+    "karma-firefox-launcher": "~0.1.7",
+    "karma-jasmine": "~0.3.8",
+    "karma-typescript-preprocessor": "0.0.21",
+    "reflect-metadata": "0.1.3",
+    "rxjs": "5.0.0-beta.6",
+    "semantic-release": "~4.3.5",
+    "systemjs": "~0.19.24",
+    "systemjs-builder": "^0.15.13",
+    "tsd": "^0.6.5",
+    "typescript": "^1.8.9",
+    "typings": "1.2.0",
+    "zone.js": "^0.6.10"
+  },
+  "dependencies": {
+    "jsrsasign": "^5.0.12",
+    "object-assign": "^4.1.0"
+  }
+}
