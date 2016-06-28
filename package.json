@@ -1,8 +1,8 @@
 {
   "name": "ng2-oauth2",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Provide OAuth2 and OpenId Connect support for Angular2",
-  "main": "ng2-oauth2.js",
+  "main": "./bundles/ng2-oauth2.js",
   "typings": "./ng2-oauth2.d.ts",
   "scripts": {
     "test": "tsc && karma start",
@@ -54,5 +54,16 @@
   "dependencies": {
     "jsrsasign": "^5.0.12",
     "object-assign": "^4.1.0"
-  }
+  },
+  "directories": {
+    "test": "tests"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radenui/ng2-oauth2.git"
+  },
+  "bugs": {
+    "url": "https://github.com/radenui/ng2-oauth2/issues"
+  },
+  "homepage": "https://github.com/radenui/ng2-oauth2#readme"
 }
